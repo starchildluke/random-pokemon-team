@@ -21,7 +21,46 @@ def get_pokemon_types(pokemon):
     type_data = [pokemon_data['types'][t]["type"]["name"] for t in range(len(pokemon_data['types']))]
     return type_data
 
+st.header('Random Pokémon Team Generator')
+
+st.subheader('Generate a random team based on all fully evolved Pokémon from Red/Blue/Yellow (excluding Legendaries and Mythicals).')
+
+st.markdown("---")
+
+with st.expander("How many Pokémon are featured? 🤔", expanded=False):
+
+    st.markdown(
+    """
+    You have a choice of 64 Pokémon, from Venusaur to Dragonite.
+    """)
+
+with st.expander("Where is the data from? 🤖", expanded=False):
+
+    st.markdown(
+        """
+        All the Pokémon data has been scraped from [PokéAPI](https://pokeapi.co/). Initially, the script pulled data directly from the API but to save on bandwidth and improve speed, I scraped data for all 64 Pokémon.
+        """
+    )
+
+with st.expander("To do list 📝", expanded=False):
+
+    st.markdown(
+        """
+        - Add more data (if the public demand it!)
+        """
+    )
+
+st.markdown('Made with love and [Streamlit](https://streamlit.io/) by [@LukeDavisSEO](https://twitter.com/LukeDavisSEO)')
+
+st.markdown('<a href="https://ko-fi.com/A6102C2T"><img src="https://cdn.ko-fi.com/cdn/kofi2.png" alt="Buy Me a Coffee at ko-fi.com" height="36"></a>', unsafe_allow_html=True)
+
+st.markdown("---")
+
+st.info("Click 'Generate Team' to generate your random team of 6")
+
 generate_team = st.button('Generate team')
+
+st.markdown("---")
 
 if generate_team:
 
