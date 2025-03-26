@@ -1,7 +1,8 @@
 # random-pokemon-team
 A script that generate a random team based on all fully evolved Pokémon from Red/Blue/Yellow (excluding Legendaries and Mythicals).
 
-Mini write-up: https://lukealexdavis.co.uk/post/morsels/morsel-7/
+- Streamlit app link: https://starchildluke-random-pokemon-team-random-gen1-team-kbwrud.streamlit.app/
+- Mini write-up: https://lukealexdavis.co.uk/morsels/morsel-7/
 
 ## How many Pokémon are featured? 🤔
 You have a choice of 64 Pokémon, from Venusaur to Dragonite.
