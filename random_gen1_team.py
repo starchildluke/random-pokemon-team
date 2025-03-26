@@ -54,8 +54,6 @@ st.sidebar.markdown('Made with love and [Streamlit](https://streamlit.io/) by [@
 
 st.sidebar.markdown('<a href="https://ko-fi.com/A6102C2T"><img src="https://cdn.ko-fi.com/cdn/kofi2.png" alt="Buy Me a Coffee at ko-fi.com" height="36"></a>', unsafe_allow_html=True)
 
-st.markdown("---")
-
 st.info("Click 'Generate Team' to generate your random team of 6")
 
 generate_team = st.button('Generate team')
