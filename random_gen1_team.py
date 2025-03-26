@@ -27,14 +27,14 @@ st.subheader('Generate a random team based on all fully evolved Pokémon from Re
 
 st.markdown("---")
 
-with st.expander("How many Pokémon are featured? 🤔", expanded=False):
+with st.sidebar.expander("How many Pokémon are featured? 🤔", expanded=False):
 
     st.markdown(
     """
     You have a choice of 64 Pokémon, from Venusaur to Dragonite.
     """)
 
-with st.expander("Where is the data from? 🤖", expanded=False):
+with st.sidebar.expander("Where is the data from? 🤖", expanded=False):
 
     st.markdown(
         """
@@ -42,7 +42,7 @@ with st.expander("Where is the data from? 🤖", expanded=False):
         """
     )
 
-with st.expander("To do list 📝", expanded=False):
+with st.sidebar.expander("To do list 📝", expanded=False):
 
     st.markdown(
         """
@@ -50,9 +50,9 @@ with st.expander("To do list 📝", expanded=False):
         """
     )
 
-st.markdown('Made with love and [Streamlit](https://streamlit.io/) by [@LukeDavisSEO](https://twitter.com/LukeDavisSEO)')
+st.sidebar.markdown('Made with love and [Streamlit](https://streamlit.io/) by [@LukeDavisSEO](https://twitter.com/LukeDavisSEO)')
 
-st.markdown('<a href="https://ko-fi.com/A6102C2T"><img src="https://cdn.ko-fi.com/cdn/kofi2.png" alt="Buy Me a Coffee at ko-fi.com" height="36"></a>', unsafe_allow_html=True)
+st.sidebar.markdown('<a href="https://ko-fi.com/A6102C2T"><img src="https://cdn.ko-fi.com/cdn/kofi2.png" alt="Buy Me a Coffee at ko-fi.com" height="36"></a>', unsafe_allow_html=True)
 
 st.markdown("---")
 
