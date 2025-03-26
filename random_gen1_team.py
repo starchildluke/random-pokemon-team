@@ -58,8 +58,6 @@ st.info("Click 'Generate Team' to generate your random team of 6")
 
 generate_team = st.button('Generate team')
 
-st.markdown("---")
-
 if generate_team:
 
     pokemon_team = random.sample(fully_evolved_pokemon_list,6)
